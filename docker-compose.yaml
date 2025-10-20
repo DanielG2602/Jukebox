@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    container_name: music_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    command: python main.py 
