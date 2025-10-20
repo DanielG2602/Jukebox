@@ -7,4 +7,4 @@ services:
       - .env
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
-    command: python main.py 
+    command: python main.py
