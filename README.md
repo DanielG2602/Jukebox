@@ -31,15 +31,18 @@ Com os arquivos dockerfile, docker-compose.yaml e .env configurados, execute o s
 
 # 1. Constrói a imagem (instalando Python, dependências e FFmpeg)
 # 2. Inicia o contêiner em segundo plano (-d)
-docker-compose up --build -d
 
+```bash
+docker-compose up --build -d
+```
 
 4. Verifique o Status
 
 Para confirmar que o bot se conectou ao Discord com sucesso, visualize os logs:
 
+```bash
 docker logs music_bot -f
-
+```
 
 Você deve ver uma mensagem como: ✅ Login efetuado como: SEU_BOT
 
@@ -53,51 +56,60 @@ Aliases
 
 Descrição
 
+```bash
 !entrar
-
+```
 
 
 Faz o bot entrar no seu canal de voz atual.
 
+```bash
 !play <busca ou URL>
-
+```
 
 
 Toca a música ou a adiciona à fila de reprodução.
 
+```bash
 !skip
-
+```
 
 
 Pula a música que está tocando atualmente.
 
+```bash
 !pause
-
+```
 
 
 Pausa a música em reprodução.
 
+```bash
 !resume
-
+```
 
 
 Retoma a música que estava pausada.
 
+```bash
 !queue
-
+||
 !fila
+```
 
 Mostra a lista de músicas que estão na fila.
-
+```bash
 !stop
-
+```
 
 
 Interrompe a reprodução imediatamente e limpa toda a fila.
 
+```bash
 !sair
-
+||
 !dc
+```
 
 Desconecta o bot do canal de voz e limpa a fila do servidor.
 
